@@ -4,8 +4,6 @@ create database fiarako;
 create table utilisateur(
     id serial primary key,
     nom varchar(40),
-    prenom varchar(40),
-    contact varchar(30),
     email varchar(40),
     passwords varchar(50)
 );
@@ -56,11 +54,7 @@ create table voiture(
     couleur varchar
 );
 
-create table entretien(
-    idEntre serial primary key,
-    idVoiture int references voiture(idCar),
 
-);
 
 
 create table vente(
@@ -71,9 +65,11 @@ create table vente(
 );
 
 create table annonce(
-    idAnnonce serial primary key,
-    idUser int references utilisateur(id),
-    daty date 
+    idannonce serial primary key,
+    descriptions varchar(300),
+    idFiara int references voiture(idFiara),
+    isValid boolean ,
+    dateAnnonce datetime
 );
 
 
@@ -91,7 +87,6 @@ join model mod on mod.idMod=vo.idCar
 join carburant carb on carb.idCarbu=vo.idCar
 join moteur mot on mot.idMot=vo.idCar
 join transmission trans on trans.idTran=vo.idCar;
-
 
 
 
