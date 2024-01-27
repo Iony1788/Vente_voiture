@@ -1,0 +1,32 @@
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd; /* Ajoutez des styles de bordure selon vos préférences */
+    margin: 10px;
+  }
+  
+  .left-section img {
+    width: 100px; /* Ajustez la largeur de l'image selon vos besoins */
+    height: auto;
+  }
+  
+  .right-section {
+    text-align: right;
+  }
+  
+  .right-section h2, .right-section p {
+    margin-bottom: 10px;
+  }
+  
+  .right-section button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Ajoutez d'autres styles de bouton selon vos préférences */
+  }
+  

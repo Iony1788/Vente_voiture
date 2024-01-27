@@ -1,0 +1,58 @@
+/* styles.css */
+.car-list {
+    margin-top: 11%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-flow: row; /* Passage automatique à la ligne lorsque la première ligne est pleine */
+    gap: 0px/* Espacement entre les éléments */
+  }
+  
+  .car-card {
+    
+    margin-bottom: 10px; 
+    background-color: #fff;
+    border: 1px solid #cecedd; /* Bleu marine */
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden; /* Pour que l'image ne dépasse pas la boîte */
+    transition: transform 0.3s; 
+    margin-left: 3%;
+    width: 94%;
+    height: 97%;
+    
+  }
+  .h5,h5{
+
+    margin-top: 30%;
+  }
+  
+  .car-card img {
+    background-color: aquamarine;
+    width: 50%;
+    height: 50%;
+  }
+  .car-card :hover {
+    transform: scale(1.05); /* Effet de survol : agrandir légèrement la carte */
+  }
+  
+  .car-card h3 {
+    margin-top: 10px;
+  }
+  
+  .car-card p {
+    margin-top: 5px;
+  }
+  
+  .car-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000080; /* Bleu marine */
+    font-weight: bold;
+    margin-left: 72%;
+  }
+  
+  .car-card a:hover {
+    text-decoration: underline;
+  }
+ 

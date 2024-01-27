@@ -1,0 +1,93 @@
+/* styles.css */
+.navbar {
+    background-color: #3030e9; /* Bleu marine */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 2%;
+    margin-top: -11%;
+  }
+  .search-bar{
+    background-color: #3030e9;
+  }
+  .logo {
+    width: 50px; /* Ajustez la largeur selon vos besoins */
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  
+  /* style boutton */
+/* styles.css */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #000080; /* Bleu marine */
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000080; /* Bleu marine */
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #001F3F; /* Bleu marine plus foncé au survol */
+}
+
+button {
+  background-color: #000080; /* Bleu marine */
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid; /* Bordure blanche de 2 pixels */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s; /* Ajoute une transition pour un effet plus fluide au survol */
+}
+
+button:hover {
+  background-color: #001F3F; /* Bleu marine plus foncé au survol */
+  border-color: #001F3F; /* Changement de couleur de bordure au survol */
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-links {
+      margin-top: 10px;
+  }
+
+  .search-bar {
+      margin: 10px 0;
+  }
+}
