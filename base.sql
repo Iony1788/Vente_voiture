@@ -70,7 +70,11 @@ create table vente(
     daty date 
 );
 
-create table annonce()
+create table annonce(
+    idAnnonce serial primary key,
+    idUser int references utilisateur(id),
+    daty date 
+);
 
 
 create or replace view V_vente as select us.nom as utilisateur,us.contact as contact,v.marque,ve.daty from vente ve 
