@@ -1,4 +1,3 @@
-// NavBar.js
 import React from 'react';
 import './NavBar.css';
 
@@ -15,23 +14,24 @@ const NavBar = () => {
         <li><a href="/contact">Contact</a></li>
         <li><a href="/favorites">Voitures favorites</a></li>
       </ul>
+
       <div className="search-bar">
         <label>Recherche</label>
-            <select>
-                <option>logo1</option>
-                <option>logo1</option>
-                <option>logo1</option>
-            </select>
-            <select>
-                <option>logo1</option>
-                <option>logo1</option>
-                <option>logo1</option>
-            </select>
-      <button className="button">Rechercher</button>
-    </div>
-    <button className="button" onClick={handleSubmit}>Se conneter </button>
+        <select>
+          <option>logo1</option>
+          <option>logo2</option>
+          <option>logo3</option>
+        </select>
+        <select>
+          <option>logo1</option>
+          <option>logo2</option>
+          <option>logo3</option>
+        </select>
+        <button className="button">Rechercher</button>
+      </div>
+
+      <button>Se connecter</button>
     </nav>
-    
   );
 };
 
