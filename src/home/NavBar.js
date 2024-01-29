@@ -10,7 +10,7 @@ const NavBar = () => {
 
       {/* Liens de navigation */}
       <ul className="nav-links">
-        <li><a href="/">Accueil</a></li>
+        <li><a href="">Accueil</a></li>
         <li><a href="/about">À propos</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/favorites">Voitures favorites</a></li>
@@ -29,7 +29,7 @@ const NavBar = () => {
             </select>
       <button className="button">Rechercher</button>
     </div>
-      <button className="button">Se connecter</button>
+    <button className="button" onClick={handleSubmit}>Se conneter </button>
     </nav>
     
   );
