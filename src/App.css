@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+/* App.css */
+body {
+  font-size: 12px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-vertical {
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(68, 84, 155);
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.car-list {
+  list-style-type: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.car-item {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.car-item-content {
+  padding: 10px;
+}
+
+.col-lg-3 navbar-vertical{
+  margin-left: 0%;
+  color: #f9f9f9;
+}
+/* App.css */
+.navbar-nav .nav-link {
+  color: #fff; /* Changer la couleur du texte en blanc */
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff; /* Changer la couleur du texte en blanc pour les éléments de la dropdown */
+}
+
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
 }
