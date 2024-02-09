@@ -90,21 +90,23 @@ function App() {
         
         <main className='col-lg-1'></main>
         <main className="col-lg-10 pt-5">
+
+        {/* Cadre voiture */}
           <ul className="car-list">
             <li className="car-item">
               <div className="car-item-content">
-                <h3>Toyota Camry</h3>
-                <p>Prix: $25,000</p>
-                <Button variant="outline-info" onClick={handleShow}>
-                  Voir détails
-                </Button>
-
-
-
+                <p><img src={sary} alt='' style={{ width: '50%', height: '0%' }}/></p>
+                  <h3>Toyota Camry</h3>
+                  <p>Prix: $25,000</p>
+                  <Button variant="outline-info" onClick={handleShow}>
+                    Voir détails
+                  </Button>
               </div>
+             
             </li>
              <li className="car-item">
               <div className="car-item-content">
+              <p><img src={sary} alt='' style={{ width: '50%', height: '0%' }}/></p>
                 <h3>Toyota Camry</h3>
                 <p>Prix: $25,000</p>
                 <Button variant="outline-info" onClick={handleShow}>
@@ -114,6 +116,7 @@ function App() {
             </li>
             <li className="car-item">
               <div className="car-item-content">
+              <p><img src={sary} alt='' style={{ width: '50%', height: '0%' }}/></p>
                 <h3>Honda Civic</h3>
                 <p>Prix: $22,000</p>
                 <Button variant="outline-info" onClick={handleShow}>
@@ -123,6 +126,7 @@ function App() {
             </li>
             <li className="car-item">
               <div className="car-item-content">
+              <p><img src={sary} alt='' style={{ width: '50%', height: '0%' }}/></p>
                 <h3>Honda Civic</h3>
                 <p>Prix: $22,000</p>
                 <Button variant="outline-info" onClick={handleShow}>
@@ -130,7 +134,7 @@ function App() {
                 </Button>
               </div>
             </li> 
-            {/* Ajouter plus de voitures si nécessaire */}
+           {/* fin cadre voiture */}
                   
             
       <Button variant="danger" onClick={handleShowes} size='lg'>
