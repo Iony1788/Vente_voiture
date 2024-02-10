@@ -5,7 +5,6 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Form } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import Col from 'react-bootstrap/Col';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import * as formik from 'formik';
 import * as yup from 'yup';
@@ -40,6 +39,9 @@ export default function Navbar() {
 
   return (
     <>
+    <div className="">
+
+    </div>
      <div className="row no-gutters fixed-top m-5">
         <Button variant="outline-dark" onClick={handleShow}  style={{
         position:'fixed',width:'60px'

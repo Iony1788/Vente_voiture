@@ -1,6 +1,7 @@
 /* App.css */
 body {
   font-size: 12px;
+  background-color: #b3d3e9;
 }
 
 .container {
@@ -80,7 +81,9 @@ body {
   color: #fff; /* Changer la couleur du texte en blanc pour les éléments de la dropdown */
 }
 
-
+#font{
+  background-color: #000 !important;
+}
 
 .footer {
   margin-top: 50px;

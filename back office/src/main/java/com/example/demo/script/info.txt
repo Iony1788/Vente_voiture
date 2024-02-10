@@ -1,0 +1,4 @@
+annonce 
+    valider non vendue = 1
+    en attente = 0
+    vendue = 2 

@@ -3,10 +3,11 @@ import React from 'react';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
 import Navbar from './Navbar';
-import sary from './car1.jpg';
-
+import sary from './img/car1.jpg';
+import sary2 from './img/car2.jpg';
+import sary3 from './img/car3.jpg';
+import sary4 from './img/car4.jpg';
 import './App.css';
 
 function App() {
@@ -76,7 +77,7 @@ function App() {
           </Button>
         </Modal.Footer>
       </Modal>
-  <div className="row no-gutters d-flex">
+  <div className="row no-gutters d-flex" id="font">
       <Navbar/>
       
       
@@ -95,9 +96,9 @@ function App() {
           <ul className="car-list">
             <li className="car-item">
               <div className="car-item-content">
-                <p><img src={sary} alt='' style={{ width: '50%', height: '0%' }}/></p>
+                <p><img src={sary2} alt='' style={{ width: '50%', height: '0%' }}/></p>
                   <h3>Toyota Camry</h3>
-                  <p>Prix: $25,000</p>
+                  <p>Prix: 30,000$</p>
                   <Button variant="outline-info" onClick={handleShow}>
                     Voir détails
                   </Button>
@@ -106,9 +107,19 @@ function App() {
             </li>
              <li className="car-item">
               <div className="car-item-content">
-              <p><img src={sary} alt='' style={{ width: '50%', height: '0%' }}/></p>
-                <h3>Toyota Camry</h3>
-                <p>Prix: $25,000</p>
+              <p><img src={sary3} alt='' style={{ width: '50%', height: '0%' }}/></p>
+                <h3>Ford</h3>
+                <p>Prix: 25,000$</p>
+                <Button variant="outline-info" onClick={handleShow}>
+                  Voir détails
+                </Button>
+              </div>
+            </li>
+            <li className="car-item">
+              <div className="car-item-content">
+              <p><img src={sary4} alt='' style={{ width: '50%', height: '0%' }}/></p>
+                <h3>Polo</h3>
+                <p>Prix: 22,000$</p>
                 <Button variant="outline-info" onClick={handleShow}>
                   Voir détails
                 </Button>
@@ -117,18 +128,8 @@ function App() {
             <li className="car-item">
               <div className="car-item-content">
               <p><img src={sary} alt='' style={{ width: '50%', height: '0%' }}/></p>
-                <h3>Honda Civic</h3>
-                <p>Prix: $22,000</p>
-                <Button variant="outline-info" onClick={handleShow}>
-                  Voir détails
-                </Button>
-              </div>
-            </li>
-            <li className="car-item">
-              <div className="car-item-content">
-              <p><img src={sary} alt='' style={{ width: '50%', height: '0%' }}/></p>
-                <h3>Honda Civic</h3>
-                <p>Prix: $22,000</p>
+                <h3>Rang Rover</h3>
+                <p>Prix: 30,000$</p>
                 <Button variant="outline-info" onClick={handleShow}>
                   Voir détails
                 </Button>
